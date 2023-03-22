@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente hic quisquam et molestiae! Beatae error rerum, cum non aut vitae culpa cumque fugit quod reiciendis aliquam itaque totam labore amet.
+    Ullam tenetur iste in vitae commodi alias dicta quidem dignissimos libero, obcaecati tempora laborum non maxime sapiente voluptas explicabo, impedit repellat fugit officia eligendi voluptatum? Iure vero enim accusantium velit.
+    Eum aliquid illo assumenda excepturi ab ut ea repudiandae dolore tempora tempore? Iure fuga architecto mollitia omnis molestiae libero enim repellendus, quia at id est odio modi suscipit, molestias magni!
+    Odio recusandae laboriosam aut reiciendis dolores deleniti fugit, odit deserunt enim nobis placeat error facilis non perspiciatis aspernatur fuga culpa quae doloribus quibusdam rem obcaecati! Impedit voluptates architecto optio dicta.
+    Blanditiis tempora repellendus culpa aut vero error cupiditate nisi nam explicabo exercitationem, dolorum iusto. Numquam eveniet minus in autem sint animi fuga nisi maiores modi exercitationem. Aliquam doloribus quae facere.
+    Ipsa numquam quae minus mollitia dicta illum accusantium aspernatur doloremque et natus, sed officia eum eos distinctio quaerat culpa omnis ipsum porro magnam. Exercitationem est nesciunt aperiam reiciendis ipsa! Veritatis.
+    Eveniet atque nostrum, nam praesentium perspiciatis amet a non fugiat! Sequi in, minima libero consectetur laboriosam impedit accusantium illum. Est facilis distinctio cupiditate quo at quidem impedit quam molestiae ullam?
+    Laborum molestiae nesciunt dignissimos distinctio ea eaque, architecto assumenda error! Vero, ipsum perferendis! Libero enim dolorum ducimus provident iure nihil, eos ullam quis ipsum perspiciatis laudantium ipsam temporibus nobis ad.
+    Magni quae quidem quos aliquam voluptate fugit reprehenderit qui minima. Ipsam, iste expedita beatae dolor id blanditiis obcaecati praesentium enim? Accusamus earum, neque a recusandae enim voluptatum odio facilis natus?
+    Beatae, tempora debitis enim cum suscipit odit. Necessitatibus animi maxime adipisci dolorum, eaque placeat ab sapiente. Facere veritatis animi, eum sed porro esse quidem exercitationem aut natus rem voluptates doloremque.
+    Atque maiores laborum laboriosam eligendi, excepturi expedita magni sit corporis, rerum quis minima quidem fuga necessitatibus incidunt eos dolore itaque quibusdam consectetur saepe. Laudantium cumque quae repellendus at aut nulla?
+    Impedit, dolor necessitatibus! Optio ducimus totam ipsa eveniet voluptates omnis, libero ex est voluptate nihil. Delectus quisquam et, a asperiores voluptatibus accusantium! Quibusdam molestiae quos molestias ipsam nostrum at quasi.
+    Totam sit saepe, amet quo quasi non error ipsum quam beatae omnis vitae consequatur iste dolorum possimus maiores facere tempore ratione molestias nemo, temporibus eum quisquam iure in sed. Eius.
+    Saepe eum maiores dolore? Laudantium itaque obcaecati sint ducimus eos corporis error, ad magnam soluta omnis neque mollitia laborum dolor veritatis, ea quis, porro officiis commodi. Sapiente illo optio error?
+    Facere nisi dicta accusantium minus fugit suscipit totam tenetur recusandae corrupti sint eius nemo, laudantium quibusdam! Totam, impedit, in eos facere libero esse omnis a exercitationem vitae commodi, doloribus cum.
+    Vel necessitatibus modi dignissimos illo quo distinctio, officiis cupiditate itaque totam inventore eveniet facilis dolore corrupti enim quaerat rerum aliquid veritatis temporibus atque sit! Inventore incidunt omnis doloribus iste nesciunt!
+    Possimus eligendi labore aut atque! Architecto reprehenderit iure et aliquid nulla rem eligendi sequi assumenda, adipisci inventore laboriosam aliquam, accusantium tempore nisi enim voluptatem corrupti ab maiores, a doloribus. Molestiae?
+    Non incidunt veritatis tempora optio alias maxime perspiciatis minus similique veniam? Natus voluptatum laborum vero, aliquam debitis veritatis libero perferendis maxime pariatur provident reiciendis neque voluptate tempora quaerat nemo exercitationem.
+    Aut esse, suscipit, odio culpa nobis placeat animi dolorem amet repellendus corporis corrupti? Voluptates vitae error quia veritatis nam dicta architecto soluta, quasi esse? Ut asperiores assumenda perferendis minus? Perferendis?
+    Officiis nobis numquam quibusdam similique? Suscipit sit sapiente, facilis tempore at, vel eaque fuga laudantium autem obcaecati fugiat! Quis maiores sit deleniti, quidem odio error iure mollitia ut quisquam magni?</p>
+<script>
+  const para=document.getElementById("para")
+  const words=para.innerText.split(" ")
+  for(let i=0;i<words.length;i++){
+    if(words[i].length>8){
+        words[i] = '<span class="highlight">' + words[i] + '</span>'
+
+    }
+  }
+  para.innerHTML=words.join(" ")
+  
+</script>
+
+</body>
+</html>

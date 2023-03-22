@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input form</title>
+    <style>
+        body{
+            height:100vh;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+   <form>
+    <fieldset>
+        <legend>input form</legend>
+        <label for="email">E-mail:</label>
+        <br>
+        <input id="email" type="email" name="email" id="email"  placeholder="enter your email">
+        <br><br>
+        <label for="password">Password:</label>
+        <br>
+        <input id="password" type="password" name="password" id="password"  placeholder=" enter a new password">
+        <br><br>
+        <button id="submit">submit</button>
+       <p id="error"></p>
+        
+    </fieldset>
+   </form>
+   <script src="./script.js"></script>
+</body>
+</html>
